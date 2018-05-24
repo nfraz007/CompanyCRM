@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="<?php echo asset_url();?>/plugins/Bootstrap-Multiselect/css/bootstrap-multiselect.css" type="text/css">
+<script src="<?php echo asset_url();?>/plugins/Bootstrap-Multiselect/js/bootstrap-multiselect.js"></script>
