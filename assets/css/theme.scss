@@ -1,5 +1,145 @@
+$primary_color: #252839;
+$primary_color_hover: #464a5e;
+$secondary_color: #f2b632;
+$grey_dark : #677077;
+$grey_light: #b5b5b7;
+$grey_background: #eee;
+$red: #d43f3a;
+$orange: #985f0d;
+$green: #255625;
+
 body{
 	font-family: "Roboto";
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 10px 0 !important;
+}
+
+a{
+	text-decoration: none !important;
+	color: $primary_color !important;
+	&:hover, &:focus{
+		text-decoration: none !important;
+		color: $secondary_color !important;
+	}
+}
+
+label{
+	&[class~="error"]{
+		font-color: $red !important;
+		color: $red !important;
+		font-size: 12px !important;
+		font-weight: 300 !important;
+	}
+}
+
+input{
+	&[class~="error"]{
+		border: solid 1px $red !important;
+	}
+	&:focus{
+		border-color: $primary_color !important;
+	}
+}
+
+.my-btn-primary{
+	background-color: $primary_color;
+	padding: 5px 20px !important;
+	color: white;
+	&:hover, &:focus{
+		background-color: $primary_color_hover;
+		color: white;
+	}
+	&-large{
+		@extend .my-btn-primary;
+		padding: 10px 50px !important;
+	}
+}
+
+#header{
+	background-color: $primary_color;
+	.navbar{
+		margin-bottom: 0 !important;
+	}
+	a{
+		color: white !important;
+		&:hover, &:focus{
+			background-color: $primary_color_hover !important;
+		}
+	}
+	.header-icon{
+		a{
+			padding-right: 20px !important;
+			padding-left: 20px !important;
+		}
+	}
+	.header-module + .active{
+		background-color: $primary_color_hover !important;
+	}
+	#header_app{
+		background-color: $secondary_color !important;
+		width: 100px !important;
+	}
+}
+
+#page-header{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	background-color: $grey_background !important;
+	border-bottom: solid 1px $grey_light !important;
+	.breadcrumb{
+		background-color: $grey_background !important;
+		padding: 0 !important;
+		margin-top: 5px !important;
+		margin-bottom: 0 !important;
+	}
+}
+
+.dropdown{
+	.dropdown-menu{
+		background-color: $primary_color !important;
+		border-bottom: solid $secondary_color !important;
+		li{
+			padding: 10px !important;
+			&:hover, &:focus{
+				background-color: $primary_color_hover !important;
+			}
+		}
+	}
+}
+
+.data-table-div{
+	padding-top: 20px !important;
+	#data_table_wrapper{
+		.row:first-child{
+			.col-sm-6:last-child #data_table_filter{
+				float: right !important;
+			}
+		}
+	}
+}
+
+.pagination{
+	margin: 0px !important;
+	float: right !important;
+	.active{
+		a{
+			background-color: $primary_color !important;
+			color: white !important;
+		}
+	}
+}
+
+#page-login{
+	background-color: $grey_light;
+	padding: 150px 0 250px 0;
+	.login-div{
+		background-color: white;
+		padding: 30px 30px 50px 30px;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
 }

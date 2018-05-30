@@ -4,4 +4,119 @@ body {
   margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #252839 !important;
+}
+a:hover, a:focus {
+  text-decoration: none !important;
+  color: #f2b632 !important;
+}
+
+label[class~=error] {
+  font-color: #d43f3a !important;
+  color: #d43f3a !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+}
+
+input[class~=error] {
+  border: solid 1px #d43f3a !important;
+}
+input:focus {
+  border-color: #252839 !important;
+}
+
+.my-btn-primary, .my-btn-primary-large {
+  background-color: #252839;
+  padding: 5px 20px !important;
+  color: white;
+}
+.my-btn-primary:hover, .my-btn-primary-large:hover, .my-btn-primary:focus, .my-btn-primary-large:focus {
+  background-color: #464a5e;
+  color: white;
+}
+.my-btn-primary-large {
+  padding: 10px 50px !important;
+}
+
+#header {
+  background-color: #252839;
+}
+#header .navbar {
+  margin-bottom: 0 !important;
+}
+#header a {
+  color: white !important;
+}
+#header a:hover, #header a:focus {
+  background-color: #464a5e !important;
+}
+#header .header-icon a {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+#header .header-module + .active {
+  background-color: #464a5e !important;
+}
+#header #header_app {
+  background-color: #f2b632 !important;
+  width: 100px !important;
+}
+
+#page-header {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  background-color: #eee !important;
+  border-bottom: solid 1px #b5b5b7 !important;
+}
+#page-header .breadcrumb {
+  background-color: #eee !important;
+  padding: 0 !important;
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #252839 !important;
+  border-bottom: solid #f2b632 !important;
+}
+.dropdown .dropdown-menu li {
+  padding: 10px !important;
+}
+.dropdown .dropdown-menu li:hover, .dropdown .dropdown-menu li:focus {
+  background-color: #464a5e !important;
+}
+
+.data-table-div {
+  padding-top: 20px !important;
+}
+.data-table-div #data_table_wrapper .row:first-child .col-sm-6:last-child #data_table_filter {
+  float: right !important;
+}
+
+.pagination {
+  margin: 0px !important;
+  float: right !important;
+}
+.pagination .active a {
+  background-color: #252839 !important;
+  color: white !important;
+}
+
+#page-login {
+  background-color: #b5b5b7;
+  padding: 150px 0 250px 0;
+}
+#page-login .login-div {
+  background-color: white;
+  padding: 30px 30px 50px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*# sourceMappingURL=assets/css/theme.css.map */
